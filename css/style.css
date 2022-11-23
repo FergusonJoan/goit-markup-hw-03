@@ -60,8 +60,7 @@ body {
 .link:hover,
 .link:focus,
 .cont:hover,
-.mail:hover,
-.tel:hover {
+.addr:hover {
     color: var(--accent-color);
 }
 .current {
@@ -196,8 +195,7 @@ body {
     text-decoration: none;
     font-weight: 400;
 }
-.mail,
-.tel {
+.addr {
     color: var(--footer-contacts-color);
     text-decoration: none;
 }
