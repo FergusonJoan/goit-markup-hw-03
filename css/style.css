@@ -56,7 +56,7 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
+    width: 1230px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -124,6 +124,8 @@ body {
 /* Bigblock */
 .main {
 }
+.hero-container {
+}
 .hero {
     background-color: var(--footer-bg-color);
     color: var(--primary-white-color);
@@ -133,7 +135,7 @@ body {
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.4;
+    line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -141,11 +143,16 @@ body {
 .btn {
     text-align: center;
     padding: 10px 32px;
+    min-width: 216px;
+
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
 }
 .btn:hover {
     background-color: var(--sec-bg-color);
@@ -153,7 +160,26 @@ body {
 }
 
 /* Pluses */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .pluses {
+}
+.pluses-list {
+    display: flex;
+}
+.item {
+    background-color: orange;
 }
 .pluses-heading {
 }
