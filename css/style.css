@@ -10,6 +10,13 @@ html,
 body {
     height: 100%;
 }
+button {
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -139,9 +146,9 @@ body {
     background-color: var(--footer-bg-color);
 }
 .hero-title {
-    color: var(--primary-white-color);
     margin-top: 0;
     margin-bottom: 30px;
+    color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -162,7 +169,8 @@ body {
     font-size: 16px;
     line-height: calc(30 / 16);
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
     background-color: var(--sec-bg-color);
     color: var(--primary-text-color);
 }
@@ -263,7 +271,7 @@ body {
 .team-img {
 }
 
-/* PORTFOLIO */
+/* FILTER */
 
 .button {
     min-width: 73px;
@@ -283,11 +291,9 @@ body {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
-
-/* FILTER */
 .filter {
     padding-top: 94px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .filter-list {
     display: flex;
